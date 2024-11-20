@@ -11,10 +11,10 @@ fetch('https://dummyjson.com/recipes')
         for (let i=0; i<10; i++){
             console.log(i)
             titulo += `<article class= "fotos_art">
-            <img src=${data.recipes[i].image} alt= "" >
-            <article class="foto_plato"> <a class="plato" href="./index.html?id=${data.recipes[i].id}">
+            <img src=${data.recipes[i].image} class="fotos_recetas" alt= "" >
+           <a class="plato" href="./index.html?id=${data.recipes[i].id}">
             ${data.recipes[i].name}</a>
-            <p class= "dif"> Nivel de dificultad: ${data.recipes[i].difficulty}</p></article> </article>`;
+            <p class= "dif"> Nivel de dificultad: ${data.recipes[i].difficulty}</p> </article>`;
 
         }
         mprincipal.innerHTML= titulo
@@ -22,12 +22,11 @@ fetch('https://dummyjson.com/recipes')
         let cargarmasfotos = document.querySelector('.boton_mas')
         cargarmasfotos.addEventListener('click', function(){
             for(let i=10; i<20; i++){
-                titulo += `<article class="foto_plato">
-                <img src=${data.recipes[i].image} alt="">
-                <div> <a class= "plato" href= "./index.html?id=${data.recipes[i].id}">
+                titulo += `<article class="fotos_art">
+                <img src=${data.recipes[i].image} class="fotos_recetas" alt="">
+                <a class= "plato" href= "./index.html?id=${data.recipes[i].id}">
                 ${data.recipes[i].name} </a> 
                 <p class= "dif"> Nivel de dificultad: ${data.recipes[i].difficulty}</p>
-                </div>
                 </article>`;
                 mprincipal.innerHTML= titulo
             }

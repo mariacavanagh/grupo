@@ -5,26 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="cuerpo">
     <header class="headerprin">
-        <h1 class="artecocina"> EL ARTE DE COCINAR </h1>
         <section class="navegacion">
             <nav>
-                <img src="./img/1600w-r9plmKze8KI.webp" alt="">
                 <a href="./index.html">HOME</a>
-                <a href="./categorias.html">CATEGORIAS</a>
-                <a href="./login.html">LOGIN</a>
+                <a class="nav1" href="./categorias.html">CATEGORIAS</a>
+                <a class="nav2" href="./login.html">LOGIN</a>
                 <a href="./registro.html">REGISTRARSE</a>
             </nav>
-
+            <section class="form_index">
+                <form action="./resultados.html" method="get" class="formulario_de_index">
+                    <input type="text" name="buscador" placeholder="Busca recetas" required>
+                    <button type="submit" class="boton_form_index">Buscar</button>
+                </form>
+            </section>
         </section>
-        <section class="form_index">
-            <form action="./resultados.html" method="get" class="formulario_de_index">
-                <input type="text" name="buscador" placeholder="Busca recetas" required>
-                <button type="submit" class="boton_form_index">Buscar</button>
-            </form>
-        </section>
+        <h1 class="artecocina"> EL ARTE DE COCINAR </h1>
+        <img class="logo" src="./img/1600w-r9plmKze8KI.webp" alt="">
+        
     </header>
     <main>
         <section class="mprincipal"></section>
@@ -35,8 +38,8 @@
         </section>
     </main>
     <footer class="footerprin">
-        <p class="pfooter">Teodelina Lacroze</p>
-        <p class="pfooter">Maria Cavanagh Nicholson</p>
+        <p class="pfooter">TEODELINA LACROZE</p>
+        <p class="pfooter">MARIA CAVANAGH NICHOLSON</p>
 
     </footer>
     <script src="./js/index.js" ></script>
