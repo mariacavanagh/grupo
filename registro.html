@@ -4,22 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
+<body class="cuerpo">
     <header class="headerprin">
         <section class="navegacion">
             <nav>
-                <img src="./img/1600w-r9plmKze8KI.webp" alt="">
                 <a href="./index.html">HOME</a>
-                <a href="./categorias.html">CATEGORIAS</a>
-                <a href="./login.html">LOGIN</a>
+                <a class="nav1" href="./categorias.html">CATEGORIAS</a>
+                <a class="nav2" href="./login.html">LOGIN</a>
                 <a href="./registro.html">REGISTRARSE</a>
             </nav>
-        </section>
+            
+        <h1 class="artecocina"> EL ARTE DE COCINAR </h1>
+        <img class="logo" src="./img/1600w-r9plmKze8KI.webp" alt="">
+        
     </header>
+    <main>
+        <section class="formularioregistro">
+            <form class="forms" action="./index.html">
+                <input class="form" type="email" placeholder="EMAIL" name="mail" required>
+                <input class="form" type="password" placeholder="CONTRASEÑA" name="constrasena" required>
+                <label for="term">Acepto los terminos y condiciones: </label>
+                <input class="form" type="checkbox" name="term" required>
+            </form>
+            <button class="botonreg">Registrar</button>
+            <a class="form" href="./login.html">Ingresá</a> 
+        </section>
+    </main>
     <footer class="footerprin">
-        <p class="pfooter">Teodelina Lacroze</p>
-        <p class="pfooter">Maria Cavanagh Nicholson</p>
+        <p class="pfooter">TEODELINA LACROZE</p>
+        <p class="pfooter">MARIA CAVANAGH NICHOLSON</p>
+
     </footer>
 </body>
 </html>
