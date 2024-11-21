@@ -7,7 +7,7 @@
 
 }
 .cuerpo{
-    background-image: url('/Users/teodelina/Desktop/ProyectoIntegradorProgI/grupo/img/46395.webp');
+    background-image: url('/Users/mei/Desktop/trabajointegrador/grupo/img/46395.webp');
     
 }
 
@@ -19,9 +19,10 @@ header{
     height: 200px;
     width: 200px;
     border-radius: 100px;
-    display: flex;
-    justify-self: center;
     margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
 }
 
 .navegacion{
