@@ -6,9 +6,8 @@
     
 
 }
-.cuerpo{
-    background-image: url('/Users/teodelina/Desktop/ProyectoIntegradorProgI/grupo/img/46395.webp');
-    
+body{
+    background-image: url('../img/46395.webp');
 }
 
 header{
@@ -195,3 +194,75 @@ article{
     font-size: 18px;
 }
 
+.maincateg{
+    padding: 20px;
+}
+
+#sectioncate{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.articlecate{
+    background-color: rgb(239, 115, 70);
+    border: 1px solid rgb(239, 115, 70);
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    margin: 15px;
+    height: 50px;
+}
+
+.articlecate a{
+    display: block;
+    font-weight: 20px;
+    color: white;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.h1cate{
+    color: rgb(239, 115, 70);
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.resultadosbody{
+    width: 100%;
+}
+
+.sectionres {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    justify-content: center; 
+    padding: 20px;
+    width: 100%;
+}
+
+.res{
+    color: rgb(239, 115, 70);
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.return a{
+    text-decoration: none;
+    color: white;
+}
+
+.return{
+    background-color: rgb(239, 115, 70);
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    height: 30px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
