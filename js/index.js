@@ -15,7 +15,7 @@ fetch('https://dummyjson.com/recipes')
            <a class="plato" href="./index.html?id=${data.recipes[i].id}">
             ${data.recipes[i].name}</a>
             <p class= "dif"> Nivel de dificultad: ${data.recipes[i].difficulty}</p> </article>`;
-
+            
         }
         mprincipal.innerHTML= titulo
 
