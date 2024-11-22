@@ -4,15 +4,11 @@ let resultado = busquedaObjet.get("buscador");
 console.log(resultado);
 
 let recetas = document.querySelector(".sectionres");
-recetas.style.display =  "flex";
-recetas.style.flexwrap =  "wrap";
-recetas.style.flexDirection = "column";
-recetas.style.justifyContent =  "center";
-recetas.style.padding = "10px";
 
 let buscar = document.querySelector(".res");
-let aviso = `Resultado de busqueda para ${resultado}`;
+let aviso = `Resultado para ${resultado}:`;
 buscar.innerHTML = aviso;
+
 
 
 if(resultado){
@@ -29,9 +25,9 @@ if(resultado){
         for (let i=0; i<recipes.length; i++) {
             buscados += `
                 <article style="padding:15px;">
-                    <img src=${recipes[i].image} alt="">
+                    <img style="width:300px"  src=${recipes[i].image} alt="">
                     <p>Name: ${recipes[i].name}</p>
-                    <p><a href="./detalles.html?id=${recipes[i].image}" alt="">Detalles: </a></p>
+                    <p><a href="./detalles.html?id=${recipes[i].image}" style="text-decoration:none; color:black;"  alt="">Detalles: </a></p>
                 </article>
             `;
         }
