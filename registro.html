@@ -17,19 +17,25 @@
             </nav>
             
         <h1 class="artecocina"> EL ARTE DE COCINAR </h1>
-        <img class="logo" src="./img/1600w-r9plmKze8KI.webp" alt="">
+        <section class="cajalogo">
+            <img class="logo" src="./img/1600w-r9plmKze8KI.webp" alt="">
+        </section>
         
     </header>
-    <main>
+    <main class="mainregi">
         <section class="formularioregistro">
-            <form class="forms" action="./index.html">
-                <input class="form" type="email" placeholder="EMAIL" name="mail" required>
-                <input class="form" type="password" placeholder="CONTRASEÑA" name="constrasena" required>
-                <label for="term">Acepto los terminos y condiciones: </label>
-                <input class="form" type="checkbox" name="term" required>
+            <form class="forms" action="./index.html" method="get">
+                <input class="form" type="email" placeholder="email" name="mail" required>
+                <input class="form" type="password" placeholder="contraseña" name="constrasena" required>
+                <div class="contenedor">
+                    <label for="term">Acepto los terminos y condiciones: </label>
+                    <input class="form" type="checkbox" name="term" required>
+                </div>
+                <button type="submit" class="botonregis">Registrar</button>
+                <a href="./index.html"></a>
+                <a class="form" href="./login.html">Ingresá</a> 
             </form>
-            <button class="botonreg">Registrar</button>
-            <a class="form" href="./login.html">Ingresá</a> 
+            
         </section>
     </main>
     <footer class="footerprin">

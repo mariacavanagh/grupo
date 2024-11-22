@@ -15,14 +15,21 @@ header{
     width: 100%;
 }
 
+.artecocina{
+    font-size: 40px;
+    color: rgb(239, 115, 70);
+}
+
+.cajalogo{
+   display: flex;
+   justify-content: center;
+}
+
 .logo{
     height: 200px;
     width: 200px;
     border-radius: 100px;
     margin-bottom: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-self: center;
 }
 
 .navegacion{
@@ -43,6 +50,21 @@ header{
     background-color: rgb(239, 115, 70);
     border-radius: 40px;
     padding: 15px;
+}
+
+
+.cuadrado_para_escribir{
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: rgb(247, 246, 246);
+}
+
+.boton_form_index{
+    font-size: 20px;
+    background-color: rgb(239, 115, 70);
+    color: white;
+    border-radius: 10px;
+    border-color: rgb(247, 246, 246);
 }
 
 .artecocina{
@@ -95,16 +117,19 @@ article{
 }
 
 .formulariologin{
-    width: 200px;
+    width: 500px;
     font-weight: bold;
     font-size: 20px;
     align-items: center;
+    background-color: rgb(248, 248, 248);
+    border-radius: 10px;
 }
 
 .form{
     margin: 10px;
     text-decoration: none;
     color: black;
+    font-size: 20px;
 }
 
 .formularioregistro{
@@ -112,16 +137,12 @@ article{
     font-weight: bold;
     font-size: 20px;
     align-items: center;
+    background-color: rgb(248, 248, 248);
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 100px;
 }
 
-.boton{
-    margin-right: 100px;
-    color: white;
-    background-color: rgb(239, 115, 70);
-    border-color: rgb(239, 115, 70);
-    height: 40px;
-    width: 200px;
-}
 
 .botonreg{
     margin-right: 100px;
@@ -132,4 +153,45 @@ article{
     width: 400px; 
 }
 
+.mainregi{
+    display: flex;
+    justify-content: center;
+}
+
+.cargar_mas_fotos{
+    display: flex;
+    justify-content: center;
+}
+
+.boton_mas{
+    background-color: rgb(239, 115, 70);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 10px;
+    border-color: white;
+}
+
+.botonreg{
+    width: 200px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.botonregis{
+    color: white;
+    background-color: rgb(239, 115, 70);
+    border-color: rgb(239, 115, 70);
+    border-style: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 300px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+}
 
