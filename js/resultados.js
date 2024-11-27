@@ -25,9 +25,9 @@ if(resultado){
         for (let i=0; i<recipes.length; i++) {
             buscados += `
                 <article style="padding:15px;">
-                    <img style="width:300px"  src=${recipes[i].image} alt="">
+                    <img style="width:300px;"  src=${recipes[i].image} alt="">
                     <p>Name: ${recipes[i].name}</p>
-                    <p><a href="./detallerecetas.html?id=${recipes[i].image}" style="text-decoration:none; color:black;"  alt="">Detalles: </a></p>
+                    <a href="./detallerecetas.html?id=${recipes[i].id}" style="text-decoration:none; color:black;"  alt="">Detalles: </a>
                 </article>
             `;
         }

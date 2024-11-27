@@ -13,13 +13,13 @@ fetch(`https://dummyjson.com/recipes/${sacar}`)
     .then(function(data){
         console.log(data);
         detallerec.innerHTML += `
-        <article class="articlerec">
-        <div class"contenedor">
+        <article class="articlerec" style="width:500px;">
+        <div class"contenedor" >
         <h2 style="font-weight:bold;">${data.name}</h2>
         <p>Instrucciones de preparacion: ${data.instructions}</p>
         <p>Tiempo de cocción: ${data.cookTimeMinutes}</p>
-        <img src="${data.image}" alt="" class="imagen_detalles">
-        <a href="./categorias.html" class="arecetas"><p> Categorias: </p>${data.mealType}</a> 
+        <img src="${data.image}" alt="" class="imagen_detalles" style="width:300px;">
+        <a href="./categorias.html" class="arecetas" style="color:black; text-decoration:none;"><p> Categorias: ${data.mealType}</p></a> 
         </div>
         </article>
         `

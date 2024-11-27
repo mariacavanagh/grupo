@@ -268,3 +268,9 @@ article{
     display: flex;
     justify-content: center;
 }
+
+.mainrec{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
