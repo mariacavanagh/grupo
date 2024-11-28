@@ -21,7 +21,7 @@ fetch('https://dummyjson.com/recipes')
 
         let cargarmasfotos = document.querySelector('.boton_mas')
         cargarmasfotos.addEventListener('click', function(){
-            for(let i=10; i<20; i++){
+            for(let i=10; i<data.recipes.length; i++){
                 titulo += `<article class="fotos_art">
                 <img src=${data.recipes[i].image} class="fotos_recetas" alt="">
                 <a class= "plato" href= "./index.html?id=${data.recipes[i].id}">

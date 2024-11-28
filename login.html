@@ -24,14 +24,22 @@
     </header>
     <main class="mainregi">
        <section class="formulariologin">
-            <form class="forms" action="./index.html">
-                <input class="form" id="email" type="email" value="" placeholder="email" required>
-                <span class="feedback"></span>
-                <input class="form" type="password"  id="contrasena" value="" placeholder="contraseña" required>
-                <span class="feedback"></span>
+            <form class="forms" action="./index.html" method="get">
+                <div>
+                    <input class="form" id="email" type="email" value="" placeholder="email" required>
+                    <div class="emailmal"></div>
+                </div>
+                <div>
+                    <input class="form" type="password"  id="contrasena" value="" placeholder="contraseña" required>
+                    <div class="errorcontra"></div>
+                </div>
+                <div>
+                    <button type="submit" class="botonreg" > INGRESÁ</button>
+                </div>
+                <div>
+                    <a class="form" href="./registro.html">No tenés cuenta? hace click</a>
+                </div>
             </form>
-            <button class="botonreg">INGRESÁ</button>
-            <a class="form" href="./registro.html">No tenés cuenta? hace click</a>
        </section>
     </main>
     <footer class="footerprin">
