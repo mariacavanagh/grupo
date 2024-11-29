@@ -1,6 +1,6 @@
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
-let etiqueta = queryStringObj.get("tags");
+let etiqueta = queryStringObj.get("tag");
 
 let sectiondet = document.querySelector("#sectiondet");
 sectiondet.innerHTML = etiqueta; 

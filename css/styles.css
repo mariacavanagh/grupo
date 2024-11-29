@@ -134,6 +134,28 @@ article{
     
 }
 
+.email{
+    margin-left: 140px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    height: 45px;
+    margin-bottom: 10px;
+
+
+}
+
+.password{
+    margin-left: 140px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    height: 45px;
+    margin-bottom: 10px;
+
+}
+
+
 .formularioregistro{
     width: 400px;
     font-weight: bold;

@@ -13,7 +13,7 @@ fetch('https://dummyjson.com/recipes/tags')
         
         `
         <section class="articlecate">
-            <a href="./detalles.html" class="acate">${data[i]}</a>
+            <a href="./detalles.html?tag=${data[i]}" class="acate">${data[i]}</a>
         </section>`
     }
 
