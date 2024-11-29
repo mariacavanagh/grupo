@@ -24,16 +24,27 @@
     </header>
     <main class="mainregi">
         <section class="formularioregistro">
-            <form class="forms" action="./index.html" method="get">
-                <input class="form" type="email" placeholder="email" name="mail" required>
-                <input class="form" type="password" placeholder="contraseña" name="constrasena" required>
+            <h2 class="logi">REGISTRATE </h2>
+            <form class="forms" action="./login.html" method="get">
+
+            <div>
+                <input class="email" type="email" placeholder="email" name="mail" value="" id="email" >
+            </div>
+            <div class="errorcontrasena"></div>
+            <div>
+                <input class="password" type="password" placeholder="contraseña" name="constrasena" id="contrasena" >
+            </div>
+            <div class="erroremail"></div>
                 <div class="contenedor">
                     <label for="term">Acepto los terminos y condiciones: </label>
                     <input class="form" type="checkbox" name="term" required>
                 </div>
-                <button type="submit" class="botonregis">REGISTRAR</button>
-                <a href="./login.html"></a>
+            <div>
+                <button type="submit" class="botonreg">REGISTRAR</button>
+            </div>
+            <div>
                 <a class="form" href="./login.html">Ingresá</a> 
+            </div>
             </form>
             
         </section>
@@ -43,5 +54,7 @@
         <p class="pfooter">MARIA CAVANAGH NICHOLSON</p>
 
     </footer>
+
+    <script src="./js/registro.js"></script>
 </body>
 </html>

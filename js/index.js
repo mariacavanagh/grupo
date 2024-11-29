@@ -1,4 +1,4 @@
-fetch('https://dummyjson.com/recipes')
+fetch('https://dummyjson.com/recipes?limit=10')
     .then (function(response){
         return response.json();
 
@@ -9,7 +9,7 @@ fetch('https://dummyjson.com/recipes')
         let titulo = "";
         let receta = 10;
 
-        for (let i=0; i<10; i++){
+        for (let i=0; i<data.recipes.length; i++){
             console.log(i)
             titulo += `<article class= "fotos_art">
             <img src=${data.recipes[i].image} class="fotos_recetas" alt= "" >
@@ -19,32 +19,45 @@ fetch('https://dummyjson.com/recipes')
             
         }
         mprincipal.innerHTML= titulo
-
-        let cargarmasfotos = document.querySelector('.boton_mas')
-        cargarmasfotos.addEventListener('click', function(){
-            let masfotos = receta + 10;
-            if (receta < 30){
-                if (masfotos > 30){
-                    masfotos = 30;
-                }
-            }
-            for(let i= receta; i< masfotos; i++){
-                titulo += `<article class="fotos_art">
-                <img src=${data.recipes[i].image} class="fotos_recetas" alt="">
-                <a class= "plato" href= "./index.html?id=${data.recipes[i].id}">
-                ${data.recipes[i].name} </a> 
-                <p class= "dif"> Nivel de dificultad: ${data.recipes[i].difficulty}</p>
-                </article>`;
-                mprincipal.innerHTML= titulo;
-                receta = masfotos
-
-            }
-
-
-        })
         
-
     })
     .catch(function(error){
         console.log(error)
     })
+
+    let cargarmasfotos = document.querySelector('.boton_mas')
+
+    let skip = 10
+
+        cargarmasfotos.addEventListener('click', function(){
+
+            fetch(`https://dummyjson.com/recipes?limit=10&skip=${skip}`)
+            .then (function(response){
+                return response.json();
+        
+            })
+            .then(function(data){
+                console.log(data);
+                let mprincipal = document.querySelector(".mprincipal")
+                let titulo = "";
+                let receta = 10;
+        
+                for (let i=0; i<data.recipes.length; i++){
+                    console.log(i)
+                    titulo += `<article class= "fotos_art">
+                    <img src=${data.recipes[i].image} class="fotos_recetas" alt= "" >
+                   <a class="plato" href="./detallerecetas.html?id=${data.recipes[i].id}">
+                    ${data.recipes[i].name}</a>
+                    <p class= "dif"> Nivel de dificultad: ${data.recipes[i].difficulty}</p> </article>`;
+                    
+                }
+                mprincipal.innerHTML += titulo
+                
+            })
+            .catch(function(error){
+                console.log(error)
+            })
+
+            skip += 10
+
+        })

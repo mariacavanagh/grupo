@@ -34,7 +34,7 @@ if(resultado){
         recetas.innerHTML=buscados;
 
         if(buscados == ""){
-            recetas.innerHTML = `No existe el resultado de ${resultado}"`
+            recetas.innerHTML = `No existe el resultado de ${resultado}`
         }
     })
 }

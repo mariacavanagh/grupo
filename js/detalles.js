@@ -3,7 +3,8 @@ let queryStringObj = new URLSearchParams(queryString);
 let etiqueta = queryStringObj.get("tag");
 
 let sectiondet = document.querySelector("#sectiondet");
-sectiondet.innerHTML = etiqueta; 
+let titulo = document.querySelector("h2")
+titulo.innerText = etiqueta
 
 fetch(`https://dummyjson.com/recipes/tag/${etiqueta}`)
     .then(function(response){
@@ -15,9 +16,9 @@ fetch(`https://dummyjson.com/recipes/tag/${etiqueta}`)
 
         for(let i=0; i<data.recipes.length; i++){
             sectiondet.innerHTML +=            
-                `<article>
-                <img src=${data.recipes[i].image} alt="" style="width:300px;">
-                <a href="./detallerecetas.html?id=${data.recipes[i].id}"><p>Plato: ${data.recipes[i].name}</p></a>
+                `<article class = "contenedordetalles">
+                <img class="imagendeta" src=${data.recipes[i].image} alt="">
+                <a href="./detallerecetas.html?id=${data.recipes[i].id}"><p class= "platillo">Plato: ${data.recipes[i].name}</p></a>
                 <p>Dificultad: ${data.recipes[i].difficulty}</p>
                 </article>`;
         }
