@@ -19,10 +19,10 @@ registro.addEventListener('submit', function(validar){
         console.log("Por favor complete el campo contraseña");
         errorcontrasena.innerHTML= "Por favor complete el campo de la contraseña"
     } else{
-        
+        registro.submit()
+
     }
 
-    registro.submit()
     
 
 })

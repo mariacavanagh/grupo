@@ -349,4 +349,371 @@ article{
 
 }
 
+@media (max-width: 425px){
+    body{
+        background-image: url('../img/46395.webp');
+    }
+    
+    header{
+        width: 100%;
+    }
+    
+    .artecocina{
+        font-size: 20px;
+        color: rgb(239, 115, 70);
+    }
+    
+    .cajalogo{
+       display: flex;
+       justify-content: center;
+    }
+    
+    .logo{
+        height: 80px;
+        width: 80px;
+        border-radius: 100px;
+    }
+    
+    .navegacion{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    
+    .navegacion a{
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+        margin-right: 17px;
+        margin-bottom: 8px;
+        background-color: rgb(239, 115, 70);
+        border-radius: 40px;
+        padding: 10px;
+    }
+    
+    
+    .cuadrado_para_escribir{
+        font-size: 15px;
+        border-radius: 10px;
+        border-color: rgb(247, 246, 246);
+    }
+    
+    .boton_form_index{
+        font-size: 15px;
+        background-color: rgb(239, 115, 70);
+        color: white;
+        border-radius: 10px;
+        border-color: rgb(247, 246, 246);
+        margin-top: 20px;
+    }
+    
+    .artecocina{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .fotos_recetas{
+        height: 150px;
+        width: 100%;
+        border-radius: 10px;
+        margin: 10px 10px;
+    }
+    
+    article{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .mprincipal{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .plato{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .footerprin{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(239, 115, 70);
+        margin-top: 20px;
+        border-radius: 5px;
+        color: white;
+    }
+    
+    .pfooter{
+        margin: 20px;
+    }
+    
+    .forms{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    
+    .formulariologin{
+        width: 100%;
+        font-weight: bold;
+        font-size: 17px;
+        background-color: rgb(248, 248, 248);
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+    
+    .form{
+        margin: 10px;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        height: 45px;
+        
+    }
+    
+    .email{
+        margin-left: 80px;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        height: 45px;
+        margin-bottom: 10px;
+    
+    
+    }
+    
+    .password{
+        margin-left: 80px;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        height: 45px;
+        margin-bottom: 10px;
+    
+    }
+    
+    .logi{
+        color: rgb(239, 115, 70);
+        font-size: 30px;
+        text-align: center;
+    
+    }
+    
+    
+    .formularioregistro{
+        width: 100%;
+        font-weight: bold;
+        font-size: 17px;
+        background-color: rgb(248, 248, 248);
+        border-radius: 20px;
+        margin: 20px 0;
+        height: 350px;
+    }
+    
+    
+    .botonreg{
+        color: white;
+        background-color: rgb(239, 115, 70);
+        border-color: rgb(239, 115, 70);
+        width: 100%; 
+        margin: 10px 0;
+        border-radius: 10px;
+    }
+    
+    .mainregi{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cargar_mas_fotos{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .boton_mas{
+        background-color: rgb(239, 115, 70);
+        border-radius: 10px;
+        color: white;
+        box-shadow: 10px;
+        border-color: white;
+        padding: 10px;
+        width: 100px;
+        font-size: 12px;
+    }
+    
+    
+    .botonregis{
+        color: white;
+        background-color: rgb(239, 115, 70);
+        border-color: rgb(239, 115, 70);
+        border-style: none;
+        border-radius: 10px;
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .contenedor{
+        display: flex;
+        flex-direction: row;
+        font-size: 18px;
+    }
+    
+    .maincateg{
+        padding: 20px;
+    }
+    
+    #sectioncate{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .articlecate{
+        background-color: rgb(239, 115, 70);
+        border: 1px solid rgb(239, 115, 70);
+        border-radius: 10px;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+        font-size: 14px;
+    }
+    
+    .articlecate a{
+        display: block;
+        font-weight: 20px;
+        color: white;
+        margin: 10px 0;
+        text-decoration: none;
+    }
+    
+    .h1cate{
+        color: rgb(239, 115, 70);
+        display: flex;
+        justify-content: center;
+        text-decoration: underline;
+    }
+    
+    .resultadosbody{
+        width: 100%;
+    }
+    
+    .sectionres {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row; 
+        justify-content: center; 
+        padding: 20px;
+        width: 100%;
+    }
+    
+    .res{
+        color: rgb(239, 115, 70);
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    
+    .return a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .return{
+        background-color: rgb(239, 115, 70);
+        width: 100px;
+        text-align: center;
+        border-radius: 10px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+    }
+    
+    .mainrec{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .cajadetallerecetas{
+        background-color: rgba(239, 115, 70, 0.82);
+        border-radius: 10px;
+        margin-left: 37px;
+        width: 425px;
+    }
+
+    .detallerecp{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: black;
+        text-align: justify;
+    }
+    
+    .imagen_detalles{
+        border-radius: 10px;
+    }
+    
+    .imagendeta{
+        width: 100%;
+        margin: 10px auto;
+    }
+    
+    .contenedordetalles{
+        background-color: rgba(239, 115, 70, 0.82);
+        border: 1px solid;
+        border-radius: 10px;
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .detallerec{
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        flex-direction: column; 
+        width: 100%; 
+        margin: 0 auto; 
+        padding: 10px; 
+    }
+
+    #sectiondet{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    
+    .nombre_receta{
+        text-align: center;
+    }
+    
+    .platillo{
+        color: black;
+        text-decoration: underline;
+    }
+    
+    .titulosdeta{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+    
+    }
+}
+
 
