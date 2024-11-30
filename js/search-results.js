@@ -27,7 +27,7 @@ if(resultado){
                 <article style="padding:15px;">
                     <img style="width:300px;"  src=${recipes[i].image} alt="">
                     <p>Name: ${recipes[i].name}</p>
-                    <a href="./detallerecetas.html?id=${recipes[i].id}" style="text-decoration:none; color:black;"  alt="">Detalles: </a>
+                    <a href="./receta.html?id=${recipes[i].id}" style="text-decoration:none; color:black;"  alt="">Detalles: </a>
                 </article>
             `;
         }

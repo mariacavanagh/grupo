@@ -20,7 +20,7 @@ fetch(`https://dummyjson.com/recipes/${sacar}`)
         <p>Tiempo de preparacion: ${data.prepTimeMinutes} </p>
         <p>Tiempo de cocción: ${data.cookTimeMinutes}</p>
         <img src="${data.image}" alt="" class="imagen_detalles" style="width:300px;">
-        <a href="./categorias.html" class="arecetas" style="color:black; text-decoration:none;"><p> Categorias: ${data.mealType}</p></a> 
+        <a href="./categories.html" class="arecetas" style="color:black; text-decoration:none;"><p> Categorias: ${data.mealType}</p></a> 
         </div>
         </article>
         `

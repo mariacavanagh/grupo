@@ -13,7 +13,7 @@ fetch('https://dummyjson.com/recipes?limit=10')
             console.log(i)
             titulo += `<article class= "fotos_art">
             <img src=${data.recipes[i].image} class="fotos_recetas" alt= "" >
-           <a class="plato" href="./detallerecetas.html?id=${data.recipes[i].id}">
+           <a class="plato" href="./receta.html?id=${data.recipes[i].id}">
             ${data.recipes[i].name}</a>
             <p class= "dif"> Nivel de dificultad: ${data.recipes[i].difficulty}</p> </article>`;
             
@@ -46,7 +46,7 @@ fetch('https://dummyjson.com/recipes?limit=10')
                     console.log(i)
                     titulo += `<article class= "fotos_art">
                     <img src=${data.recipes[i].image} class="fotos_recetas" alt= "" >
-                   <a class="plato" href="./detallerecetas.html?id=${data.recipes[i].id}">
+                   <a class="plato" href="./receta.html?id=${data.recipes[i].id}">
                     ${data.recipes[i].name}</a>
                     <p class= "dif"> Nivel de dificultad: ${data.recipes[i].difficulty}</p> </article>`;
                     
